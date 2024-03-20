@@ -1,0 +1,8 @@
+CRITICAL - 2021-01-17 22:06:54 --> Undefined offset: 2021
+#0 C:\xampp\htdocs\web_akademik_ci\app\Models\JadwalModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\web_akademik_ci\app\Controllers\Mahasiswa.php(67): App\Models\JadwalModel->get_jadwal_mahasiswa('171511023', '2021')
+#2 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(918): App\Controllers\Mahasiswa->dashboard()
+#3 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#4 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\web_akademik_ci\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

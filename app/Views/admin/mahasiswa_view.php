@@ -1,0 +1,115 @@
+<!-- Check Status tambah data -->
+<?php	
+	if(!empty(session()->getFlashdata('gagal'))){
+		echo '<script>alert("'.session()->getFlashdata('gagal').'")</script>'; 
+	}
+?>
+
+<div class="tabel-page">
+	<div class="tabel-heading">
+		Data Mahasiswa		
+	</div>
+	<div class="button-container">
+		<button class="button-input" id="myBtn" onclick="show_modal(0)">
+			<i class="fa fa-plus" aria-hidden="true"></i> Tambah Data
+		</button>
+	</div>
+	<table id="list-data" class="display">	
+		<thead>
+			<tr>
+				<th><h5>NIM</h5></th>
+				<th><h5>Nama</h5></th>
+				<th><h5>Tingkat</h5></th>
+				<th><h5>Alamat</h5></th>
+				<th><h5>Action</h5></th>
+			</tr>
+		</thead>	
+		<?php
+			$i = 1;		
+		    foreach ($mahasiswa as $key => $l_mhs) {	
+		?>
+		        <tr>
+		        	<td><?php echo $l_mhs->NIM;?></td>
+		        	<td><?php echo $l_mhs->Nama_Mhs;?></td>
+		        	<td><?php echo $l_mhs->Tingkat;?></td>
+		        	<td><?php echo $l_mhs->Alamat;?></td>		        	
+		        	<td>		        		
+		        		<button class="button-edit" onclick="show_modal(<?php echo $i?>)">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</button>
+						<a href='javascript:hapusDataMhs("<?php echo $l_mhs->NIM?>")'>
+		        			<button class="button-delete">
+								<i class="fa fa-trash" aria-hidden="true"></i>
+							</button>
+		        		</a>						
+		        	</td>		        	
+		        </tr>
+
+		        <!-- Modal Update Data -->
+				<div id="myModal<?php echo $i?>" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+					    <div class="modal-header">
+					      <span class="close" id="close<?php echo $i?>">&times;</span>
+					      <h2>Update Data Mahasiswa</h2>
+					      <hr>
+					    </div>
+					    <div class="modal-body">
+					    	<form name="input" method="post" action="<?= base_url('mahasiswa/update')?>">
+						      	<input type="hidden" name="old_nim" value="<?php echo $l_mhs->NIM?>">
+								<label for="fnim">NIM</label>
+								<input type="text" id="fnim" name="nim" value="<?php echo $l_mhs->NIM?>" maxlength="9" required readonly>
+								<label for="fnama">Nama</label>
+								<input type="text" id="fnama" name="nama" value="<?php echo $l_mhs->Nama_Mhs?>" required>
+								<label for="ftingkat">Tingkat</label>
+								<input type="text" id="ftingkat" name="tingkat" value="<?php echo $l_mhs->Tingkat?>" required>
+								<label for="falamat">Alamat</label>
+								<input type="text" id="falamat" name="alamat" value="<?php echo $l_mhs->Alamat?>" required>
+
+								<input type="submit" value="Update">
+							</form>
+					    </div>    
+					</div>
+				</div>
+			    
+		<?php
+				$i++;
+		    	
+			} 
+				
+		?>
+	</table>
+</div>
+
+<!-- Modal untuk input data baru -->
+<div id="myModal0" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" id="close0">&times;</span>
+      <h2>Tambah Data Mahasiswa</h2>
+      <hr>
+    </div>
+    <div class="modal-body">
+      <form name="input" method="post" action="<?= base_url('mahasiswa/insert')?>">
+		<label for="fnim">NIM</label>
+		<input type="text" id="fnim" name="nim" placeholder="NIM" maxlength="9" required>
+		<label for="fnama">Nama</label>
+		<input type="text" id="fnama" name="nama" placeholder="Nama" required>
+		<label for="ftingkat">Tingkat</label>
+		<input type="text" id="ftingkat" list="tingkat" name="tingkat" placeholder="Tingkat" required>
+			<datalist id="tingkat">					
+				<option value="1">1</option>			
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</datalist>	
+		<label for="falamat">Alamat</label>
+		<input type="text" id="falamat" name="alamat" placeholder="Alamat" required>
+		<label for="fpass">Password</label>
+		<input type="password" id="fpass" name="password" required>
+		<input type="submit">
+	</form>
+    </div>    
+  </div>
+</div>

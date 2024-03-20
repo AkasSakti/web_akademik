@@ -1,0 +1,27 @@
+CRITICAL - 2021-01-19 15:02:14 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\web_akademik_ci\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\web_akademik_ci\system\Common.php(1119): CodeIgniter\View\View->render('admin/mahasiswa...', Array, true)
+#2 C:\xampp\htdocs\web_akademik_ci\app\Controllers\Mahasiswa.php(126): view('admin/mahasiswa...', Array)
+#3 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(918): App\Controllers\Mahasiswa->show()
+#4 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#5 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web_akademik_ci\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-19 15:02:54 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\web_akademik_ci\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\web_akademik_ci\system\Common.php(1119): CodeIgniter\View\View->render('admin/mahasiswa...', Array, true)
+#2 C:\xampp\htdocs\web_akademik_ci\app\Controllers\Mahasiswa.php(126): view('admin/mahasiswa...', Array)
+#3 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(918): App\Controllers\Mahasiswa->show()
+#4 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#5 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web_akademik_ci\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-19 15:03:05 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\web_akademik_ci\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\web_akademik_ci\system\Common.php(1119): CodeIgniter\View\View->render('admin/mahasiswa...', Array, true)
+#2 C:\xampp\htdocs\web_akademik_ci\app\Controllers\Mahasiswa.php(126): view('admin/mahasiswa...', Array)
+#3 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(918): App\Controllers\Mahasiswa->show()
+#4 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#5 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web_akademik_ci\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

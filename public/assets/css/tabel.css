@@ -1,0 +1,109 @@
+.input-container{
+  background-color: #FFFF;
+}
+
+.tabel-page{
+	background-color: #FFFF;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0,0.3);
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+#list-data {
+  font: 16px/1.5 "Lato", sans-serif;  
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#list-data td, #list-data th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#list-data tr:nth-child(even){background-color: #f2f2f2;}
+
+#list-data tr:hover {background-color: #ddd;}
+
+#list-data th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #7784E9;  
+  color: white;
+}
+
+.tabel-heading{
+  font-size: 20px; 
+  margin-bottom: 10px; 
+}
+
+.button-container{
+  margin-bottom: 10px;
+}
+
+.button-input{
+  background-color: green;
+  border-radius: 5%;
+  padding : 5px;
+  border: none;
+  color: #FFFFFF;
+}
+
+.button-delete{
+  background-color: #FF0000;
+  border-radius: 5%;
+  padding : 5px;
+  border: none;
+  color: #FFFFFF; 
+}
+
+.button-edit{
+  background-color: #1528B7;
+  border-radius: 5%;
+  padding : 5px;
+  border: none;
+  color: #FFFFFF; 
+}
+
+.search-box{
+  width: 20%;
+  float: left;
+  margin-right: 10%;  
+}
+
+.data-result{
+  width: 70%;
+  float: left;
+
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  #list-data {
+    font: 10px/1.5 "Lato", sans-serif; 
+  }
+  .tabel-page{
+    font-size: 10px;
+  }
+  .tabel-heading{
+    font-size: 16px;
+  }
+  .search-box{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .data-result{
+    width: 100%;
+  }
+  /*Button tambah data*/
+  .button-input{
+    font-size: 10px;
+  }
+  .button-container{
+    margin-bottom: 5px
+  }
+}
+
+

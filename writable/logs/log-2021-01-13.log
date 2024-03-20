@@ -1,0 +1,7 @@
+CRITICAL - 2021-01-13 22:46:06 --> syntax error, unexpected '!=' (T_IS_NOT_EQUAL), expecting variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\web_akademik_ci\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('mahasiswa/index')
+#1 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('mahasiswa/index')
+#2 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web_akademik_ci\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

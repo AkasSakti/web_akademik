@@ -1,0 +1,21 @@
+CRITICAL - 2021-01-18 14:21:22 --> Call to undefined method App\Models\MahasiswaModel::get_data_nilai
+#0 C:\xampp\htdocs\web_akademik_ci\app\Controllers\Mahasiswa.php(60): CodeIgniter\Model->__call('get_data_nilai', Array)
+#1 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(918): App\Controllers\Mahasiswa->dashboard()
+#2 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#3 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web_akademik_ci\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-18 14:22:33 --> Undefined variable: n_mhs
+#0 C:\xampp\htdocs\web_akademik_ci\app\Controllers\Mahasiswa.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(890): App\Controllers\Mahasiswa->__construct()
+#2 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web_akademik_ci\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-18 14:22:56 --> Undefined variable: n_mhs
+#0 C:\xampp\htdocs\web_akademik_ci\app\Controllers\Mahasiswa.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(918): App\Controllers\Mahasiswa->dashboard()
+#2 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#3 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web_akademik_ci\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

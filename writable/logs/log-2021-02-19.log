@@ -1,0 +1,20 @@
+CRITICAL - 2021-02-19 16:43:34 --> Undefined property: stdClass::$ID_Mengajar
+#0 C:\xampp\htdocs\web_akademik_ci\app\Views\admin\jadwal_view.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 71, Array)
+#1 C:\xampp\htdocs\web_akademik_ci\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web_akademik_ci\system\Common.php(1119): CodeIgniter\View\View->render('admin/jadwal_vi...', Array, true)
+#3 C:\xampp\htdocs\web_akademik_ci\app\Controllers\Jadwal.php(31): view('admin/jadwal_vi...', Array)
+#4 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(918): App\Controllers\Jadwal->index()
+#5 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+#6 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\web_akademik_ci\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-02-19 16:46:30 --> Undefined property: stdClass::$ID_Mengajar
+#0 C:\xampp\htdocs\web_akademik_ci\app\Views\admin\jadwal_view.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 71, Array)
+#1 C:\xampp\htdocs\web_akademik_ci\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web_akademik_ci\system\Common.php(1119): CodeIgniter\View\View->render('admin/jadwal_vi...', Array, true)
+#3 C:\xampp\htdocs\web_akademik_ci\app\Controllers\Jadwal.php(31): view('admin/jadwal_vi...', Array)
+#4 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(918): App\Controllers\Jadwal->index()
+#5 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+#6 C:\xampp\htdocs\web_akademik_ci\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\web_akademik_ci\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
